@@ -1,0 +1,34 @@
+{
+    "$schema": "./marketplace.schema.json",
+    "version": 1,
+    "modules": [
+        {
+            "id": "jxlpzqc.testmodule",
+            "type": "sherpaonnx_model",
+            "name": "测试模型",
+            "author": "zrjin",
+            "publisher": "jxlpzqc",
+            "desc": "测试用模型",
+            "version": 20230902,
+            "displayVersion": "2023-09-02",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-multi-zh-hans-2023-9-2.tar.bz2"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "encoder": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/encoder-epoch-20-avg-1.onnx",
+                "decoder": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/decoder-epoch-20-avg-1.onnx",
+                "joiner": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/joiner-epoch-20-avg-1.onnx",
+                "token": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/tokens.txt"
+            }
+        }
+    ]
+}
