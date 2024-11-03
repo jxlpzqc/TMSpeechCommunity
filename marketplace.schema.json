@@ -15,6 +15,10 @@
             }
         }
     },
+    "required": [
+        "version",
+        "modules"
+    ],
     "$defs": {
         "install": {
             "type": "array",
