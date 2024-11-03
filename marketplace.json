@@ -9,12 +9,12 @@
             "author": "zrjin",
             "publisher": "jxlpzqc",
             "desc": "测试用模型",
-            "version": 20230902,
-            "displayVersion": "2023-09-02",
+            "version": 20231212,
+            "displayVersion": "2023-12-12",
             "install": [
                 {
                     "type": "download",
-                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-zipformer-multi-zh-hans-2023-9-2.tar.bz2"
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12.tar.bz2"
                 },
                 {
                     "type": "extract"
@@ -24,10 +24,10 @@
                 }
             ],
             "sherpaonnx": {
-                "encoder": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/encoder-epoch-20-avg-1.onnx",
-                "decoder": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/decoder-epoch-20-avg-1.onnx",
-                "joiner": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/joiner-epoch-20-avg-1.onnx",
-                "token": "sherpa-onnx-zipformer-multi-zh-hans-2023-9-2/tokens.txt"
+                "encoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/encoder-epoch-20-avg-1-chunk-16-left-128.onnx",
+                "decoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/decoder-epoch-20-avg-1-chunk-16-left-128.onnx",
+                "joiner": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/joiner-epoch-20-avg-1-chunk-16-left-128.onnx",
+                "token": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/tokens.txt"
             }
         }
     ]
