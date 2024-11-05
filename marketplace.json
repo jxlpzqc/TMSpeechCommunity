@@ -3,12 +3,12 @@
     "version": 1,
     "modules": [
         {
-            "id": "jxlpzqc.testmodule",
+            "id": "sherpaonnx.streaming-zipformer-multi-zh-hans",
             "type": "sherpaonnx_model",
-            "name": "测试模型",
-            "author": "zrjin",
+            "name": "中文模型",
+            "author": "N/A",
             "publisher": "jxlpzqc",
-            "desc": "测试用模型",
+            "desc": "中文 Zipformer-tranducer 模型",
             "version": 20231212,
             "displayVersion": "2023-12-12",
             "install": [
@@ -24,10 +24,122 @@
                 }
             ],
             "sherpaonnx": {
+                "token": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/tokens.txt",
                 "encoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/encoder-epoch-20-avg-1-chunk-16-left-128.onnx",
                 "decoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/decoder-epoch-20-avg-1-chunk-16-left-128.onnx",
-                "joiner": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/joiner-epoch-20-avg-1-chunk-16-left-128.onnx",
-                "token": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/tokens.txt"
+                "joiner": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/joiner-epoch-20-avg-1-chunk-16-left-128.onnx"
+            }
+        },
+        {
+            "id": "csukuangfj.streaming-zipformer-en",
+            "type": "sherpaonnx_model",
+            "name": "英文模型",
+            "author": "csukuangfj",
+            "publisher": "jxlpzqc",
+            "desc": "英文流式 Zipformer-tranducer 模型",
+            "version": 20230626,
+            "displayVersion": "2023-06-26",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-en-2023-06-26.tar.bz2"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "token": "sherpa-onnx-streaming-zipformer-en-2023-06-26/tokens.txt",
+                "encoder": "sherpa-onnx-streaming-zipformer-en-2023-06-26/encoder-epoch-99-avg-1-chunk-16-left-128.onnx",
+                "decoder": "sherpa-onnx-streaming-zipformer-en-2023-06-26/decoder-epoch-99-avg-1-chunk-16-left-128.onnx",
+                "joiner": "sherpa-onnx-streaming-zipformer-en-2023-06-26/joiner-epoch-99-avg-1-chunk-16-left-128.onnx"
+            }
+        },
+        {
+            "id": "csukuangfj.streaming-zipformer-bilingual-zh-en",
+            "type": "sherpaonnx_model",
+            "name": "中英双语模型",
+            "author": "csukuangfj",
+            "publisher": "jxlpzqc",
+            "desc": "中英双语流式 Zipformer-tranducer 模型",
+            "version": 20230220,
+            "displayVersion": "2023-02-20",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20.tar.bz2"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "token": "sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/tokens.txt",
+                "encoder": "sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/encoder-epoch-99-avg-1.onnx",
+                "decoder": "sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/decoder-epoch-99-avg-1.onnx",
+                "joiner": "sherpa-onnx-streaming-zipformer-bilingual-zh-en-2023-02-20/joiner-epoch-99-avg-1.onnx"
+            }
+        },
+        {
+            "id": "sherpaonnx.streaming-zipformer-korean",
+            "type": "sherpaonnx_model",
+            "name": "한국어모델",
+            "author": "N/A",
+            "publisher": "jxlpzqc",
+            "desc": "한국어 Zipformer-tranducer 모델",
+            "version": 20240616,
+            "displayVersion": "2024-06-16",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-korean-2024-06-16.tar.bz2"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "token": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/tokens.txt",
+                "encoder": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/encoder-epoch-99-avg-1.onnx",
+                "decoder": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/decoder-epoch-99-avg-1.onnx",
+                "joiner": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/joiner-epoch-99-avg-1.onnx"
+            }
+        },
+        {
+            "id": "shaojieli.streaming-zipformer-fr",
+            "type": "sherpaonnx_model",
+            "name": "Modèle français",
+            "author": "shaojieli",
+            "publisher": "jxlpzqc",
+            "desc": "Modèle Zipformer-tranducer français",
+            "version": 20230414,
+            "displayVersion": "2023-04-14",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-fr-2023-04-14.tar.bz2"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "token": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/tokens.txt",
+                "encoder": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/encoder-epoch-29-avg-9-with-averaged-model.onnx",
+                "decoder": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/decoder-epoch-29-avg-9-with-averaged-model.onnx",
+                "joiner": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/joiner-epoch-29-avg-9-with-averaged-model.onnx"
             }
         }
     ]
